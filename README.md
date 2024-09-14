@@ -1,1 +1,0 @@
-# DaikiTsuzuki.github.io
