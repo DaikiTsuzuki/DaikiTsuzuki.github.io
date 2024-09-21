@@ -77,9 +77,9 @@ $(function(){
       サイドボタンを表示
       ===================================================*/
       // 画面下から#galleryまでの距離を取得
-      let gallery_position = $('#gallery').offset().top - $(window).height();
+      let gallery_position = $('#About Me').offset().top - $(window).height();
       // 画面下から#accessまでの距離を取得
-      let access_position = $('#access').offset().top - $(window).height();
+      let access_position = $('#Education').offset().top - $(window).height();
   
       // window.innerWidthで画面幅を取得
       // PC表示の場合の処理（画面幅が900pxより大きい場合　※900pxはCSSのブレークポイントとあわせる）
@@ -109,7 +109,7 @@ $(function(){
       Accessの背景画像を表示
       ===================================================*/
       // 画面下から#contactまでの距離を取得
-      let contact_position = $('#contact').offset().top - $(window).height();
+      let contact_position = $('#Work Experience').offset().top - $(window).height();
   
       // #accessが表示された場合
       if(scroll > access_position){

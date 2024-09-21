@@ -483,5 +483,8 @@ SP
   }
   #footer .sns {
     margin-bottom: 30px;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
   }
 }

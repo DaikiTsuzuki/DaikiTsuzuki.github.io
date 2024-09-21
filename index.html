@@ -17,23 +17,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
+    <script src="jquery.inview.min.js"></script>
     <script src="main.js"></script>
   </head>
 
   <body>
     <header id="header">
-      <div class="logo">
+      <!-- <div class="logo">
         <a href="#"><img src="img/logo.svg" alt="Daiki Tsuzuki"></a>
-      </div>
+      </div> -->
 
       <nav id="navi">
         <ul class="menu">
           <li><a href="#">TOP</a></li>
-          <li><a href="#information">About Me</a></li>
-          <li><a href="#gallery">GALLERY</a></li>
-          <li><a href="#access">ACCESS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#AboutMe">About Me</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#WorkExperience">Work Experience</a></li>
+          <li><a href="#Publications">Publications</a></li>
+          <li><a href="#Awards">Awards</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Activities">Activities</a></li>
         </ul>
       </nav>
 
@@ -54,20 +57,15 @@
         </div>
 
         <!-- サイトタイトル -->
-        <h1 class="site-title">Daiki Tsuzuki</h1>
+        <h1 class="site-title inview fadein">都筑大樹 / Daiki Tsuzuki<br>サイト工事中</h1>
 
-        <!-- Information -->
-        <section id="information">
+        <!-- About Me -->
+        <section id="AboutMe" class="wrapper">
           <h2 class="section-title">About Me</h2>
           <p>
-            <span class="info-date-en">2021 JUL 1(THU)-3(SAT)</span>
-            <span class="info-time-en">DAY1 10am-6pm OTHER 10am-5:30pm</span>
-          </p>
-          <p class="info-place">at PARK SIDE HALL</p>
-          <p class="info-date-ja">
-            2021年7月1日(木)ー3日(土)<br>
-            Day1 10時〜18時　その他 10時〜17時30分
-          </p>
+            東京大学大学院工学系研究科電気系工学専攻の都筑大樹です。<br>
+            JAXA宇宙科学研究所で宇宙機の画像航法に関する研究を行っています。
+          </p>         
         </section>
         
         <!-- サイドボタン -->
@@ -90,8 +88,8 @@
         </section> -->
 
         <!-- Access -->
-        <section id="access">
-          <h2 class="section-title">ACCESS</h2>
+        <!-- <section id="access" class="wrapper">
+          <h2 class="section-title inview fadein">ACCESS</h2>
           <p class="place">PARK SIDE HALL</p>
           <p class="address">
             〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL<br>
@@ -101,15 +99,79 @@
             Tel: 03-1111-1111<br>
             E-mail: info@xxxxxxx.jp
           </p>
-          <a class="btn" href="#" target="_blank">GOOGLE MAP</a>
+        </section> -->
+
+        <!-- Education -->
+        <section id="Education" class="wrapper">
+          <h2 class="section-title">Education</h2>
+          <ul>
+            <li>2024年3月　東京大学大学院 工学系研究科 電気系工学専攻 修士課程 修了予定</li>
+            <li>2022年3月　東海大学工学部 航空宇宙学科 航空宇宙学専攻 卒業</li>
+          </ul>
         </section>
 
+        <!-- Work Experience -->
+        <section id="WorkExperience" class="wrapper">          
+          <h2 class="section-title">Work Experience</h2>
+          <div>
+            <p>2021年11月〜　株式会社Yspace　インターン</p>
+            <p>2022年12月〜2023年1月　東海大学航空宇宙学科　ティーチングアシスタント（航空宇宙学実験）</p>
+            <p>2023年4月〜　株式会社ArkEdfe Space　インターン</p>
+            <p>2023年4月〜　JAXA宇宙科学研究所　リサーチアシスタント</p>
+          </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="Publications" class="wrapper">
+          <h2 class="section-title">Publications</h2>
+          <h3>国内学会での発表</h3>
+          <ul>
+            <li>都筑大樹、菊地楓、白澤秀剛、“赤外画像姿勢計(VAS-I)のフライトデータを用いた機上姿勢解析アルゴリズムの評価”、観測ロケットシンポジウム、2023、（口頭発表）</li>
+            <li>都筑大樹、橋本樹明、“生成画像を用いた日照条件の変化にロバストな画像航法の検討”、宇宙科学情報解析シンポジウム、2024、（口頭発表）</li>
+            <li>都筑大樹、澤西祐介、本橋優俊、沈彗央、水沼健人、秋山楓、三平舜、内田雄揮、“火星氷採取を目的として崖面で自立する展開型ローバの検討”、ロボティクス・メカトロニクス講演会、2024、（ポスター）</li>
+            <li>Daiki Tsuzuki, Masahito Fujiwara, Naoya Sakatani, Takahiro Sasaki, Naoya Ozaki, Ryu Funase, Tatsuaki Hashimoto, "A Study of Comet Identification Algorithms Using Point Spread Functions",  Workshop on JAXA Astrodynamics and Flight Mechanics, 2024, (Oral)</li>
+            <li>芦原佑樹、山本衛、石坂圭吾、熊本篤志、白澤秀剛、上垣柊季、上谷仁亮、松山実由樹、都筑大樹、坂本陽子、“S-520-32号機による電離圏擾乱発生時の電子密度鉛直・水平構造観測”、観測ロケットシンポジウム、2023、（口頭発表）</li>
+            <li>西川裕二、岡部龍哉、松田雄馬、都筑大樹、酒見議一、岩崎祥大、“人―機械介在マルチエージェントシミュレーションを用いた宇宙機信頼性に関する検討”、宇宙科学技術連合講演会、2023、（口頭発表）</li>
+            <li>Knill Maximilian, Daiki Tsuzuki, Tatsuaki Hashimoto, "Robust Vision-Based Terrain-Relative Localization for Lunar Landings", Workshop on JAXA Astrodynamics and Flight Mechanics, 2024, (Oral)</li>
+          </ul>
+        </section>
+
+        <!-- Awards -->
+        <section id="Awards" class="wrapper">
+          <h2 class="section-title">Awards</h2>
+          <ul>
+            <li>東海大学　松前重義記念基金 学部奨学金（2種）</li>
+          </ul>
+        </section>
+
+        <!-- Skills -->
+        <section id="Skills" class="wrapper">
+          <h2 class="section-title">Skills</h2>
+          <ul>
+            <li>英語（TOEFL iBT 77/120）</li>
+            <li>ドイツ語（Goethe-Zertifikat A1）</li>
+            <li>プログラミング（Python, C/C++, C#, MATLAB, etc.）</li>
+            <li>コンピューターサイエンス（応用情報技術者）</li>
+            <li>無線通信（第一級陸上無線技術士）</li>
+          </ul>
+
+        <!-- Activities -->
+        <section id="Activities" class="wrapper">
+          <h2 class="section-title">Activities</h2>
+          <ul>
+            <li>観測ロケットS-520-32号機　VAS班およびGA・MAS班</li>
+            <li>JAXA宇宙科学人材育成プログラム</li>
+            <li>6U CubeSat AOCS開発</li>
+            <li>Comet Interceptor Probe B GNCチーム</li>
+          </ul>
+        </section>
+        
         <!-- Contact -->
-        <section id="contact" class="wrapper">
+        <!-- <section id="contact" class="wrapper">
           <h2 class="section-title">CONTACT</h2>
           <a class="btn" href="#">出展に関するお問い合わせ</a>
           <a class="btn" href="#">その他のお問い合わせ</a>
-        </section>
+        </section> -->
 
         <!-- Accessの背景画像 -->
         <div class="bg"></div>
@@ -117,16 +179,16 @@
 
       <footer id="footer">
         <div>
-          <ul class="sns">
+          <!-- <ul class="sns">
             <li><a href="#" target="_blank">Twitter</a></li>
             <li><a href="#" target="_blank">Facebook</a></li>
             <li><a href="#" target="_blank">Instagram</a></li>
-          </ul>
+          </ul> -->
         </div>
-        <ul class="copyright">
+        <!-- <ul class="copyright">
           <li><a href="#">PRIVACY POLICY</a></li>
           <li>&copy; FA EXHIBITION</li>
-        </ul>
+        </ul> -->
       </footer>
     </div>
   </body>
